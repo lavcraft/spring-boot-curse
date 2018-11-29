@@ -1,0 +1,25 @@
+# jbaruch-service properties
+server:
+  port: 8002
+
+jbaruch:
+  answers:
+    - Технологии идеальны, люди – мудаки ©
+    - Всем артифактори ребятки!
+    - Groovy рулит
+    - Смотри Groovy Puzzlers
+    - Смотри груви пазлеры
+    - leftpad и npm говно
+    - анпаблиш гейт говно
+    - nexus это хороший телефон, всё
+    - binary repository manager – artifactory
+    - менеджер бинарных репозиториев – artifactory
+    - самый лушчий бинарный репозиторий – artifactory
+    - если думаете купить артифактори – не думайте, покупайте
+    - думаю ли я о artifactory? Конечно думаю!
+    - универсальная платформа для дистрибуции софта - Bintray
+    - универсальная платформа для дистрибуции софта - Бинтрей
+
+spring:
+  main:
+    allow-bean-definition-overriding: true

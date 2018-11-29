@@ -1,0 +1,6 @@
+rootProject.name = "spring-boot-test-curse"
+
+include 'common'
+include 'assistant'
+include 'jbaruch-service'
+include 'yegor256-service'

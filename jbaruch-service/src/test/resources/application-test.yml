@@ -1,0 +1,7 @@
+# jbaruch-service properties
+server:
+  port: 8089
+
+
+my:
+  option: hello-test

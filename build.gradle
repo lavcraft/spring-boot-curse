@@ -1,0 +1,68 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.0.RELEASE' apply false
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+
+    group = 'org.spring.boot.test.curse'
+    version = '1.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    compileJava {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    dependencies {
+        implementation enforcedPlatform('org.springframework.boot:spring-boot-starter:2.1.0.RELEASE'),
+                enforcedPlatform('org.springframework.cloud:spring-cloud-dependencies:Finchley.SR1'),
+                'org.springframework:spring-context',
+                'com.h2database:h2:1.4.194'
+
+        testRuntime platform('org.junit:junit-bom:5.3.2'),
+                'org.junit.platform:junit-platform-launcher',
+                'org.junit.jupiter:junit-jupiter-engine'
+
+        testCompile 'org.junit.jupiter:junit-jupiter-api',
+                'org.hamcrest:hamcrest-all:1.3',
+                'org.springframework.boot:spring-boot-starter-test'
+
+        implementation 'org.projectlombok:lombok:1.18.4'
+        annotationProcessor 'org.projectlombok:lombok:1.18.4'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.4'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+configure(subprojects - project(':common')) {
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencies {
+        compile project(':common'),
+                'org.yaml:snakeyaml',
+                'org.springframework.boot:spring-boot-starter',
+                'org.springframework.boot:spring-boot-starter-web',
+                'org.springframework.boot:spring-boot-starter-data-jpa',
+                'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    }
+
+    compileJava.dependsOn(processResources)
+}
+
+configure(project(':assistant')) {
+    dependencies {
+        implementation 'org.codehaus.groovy:groovy-templates:2.5.4'
+    }
+}
