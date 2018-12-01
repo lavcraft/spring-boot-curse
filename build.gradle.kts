@@ -15,6 +15,11 @@ allprojects {
 subprojects {
     apply(plugin = "java")
 
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    
     dependencies {
         listOf(
                 enforcedPlatform("org.springframework.boot:spring-boot-starter:2.1.1.RELEASE"),
