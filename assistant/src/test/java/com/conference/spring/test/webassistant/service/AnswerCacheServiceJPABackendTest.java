@@ -36,7 +36,7 @@ public class AnswerCacheServiceJPABackendTest {
     doThrow(new RuntimeException("Database is down")).when(questionRepository).findAll();
 
     Answer answer = answerCacheServiceJPABackend.find(Question.builder()
-        .id("ID")
+        .id(15L)
         .build());
 
     verify(questionRepository, times(1))

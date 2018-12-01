@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.0.RELEASE' apply false
+    id 'org.springframework.boot' version '2.1.1.RELEASE' apply false
 }
 
 allprojects {
@@ -20,7 +20,7 @@ subprojects {
     }
 
     dependencies {
-        implementation enforcedPlatform('org.springframework.boot:spring-boot-starter:2.1.0.RELEASE'),
+        implementation enforcedPlatform('org.springframework.boot:spring-boot-starter:2.1.1.RELEASE'),
                 enforcedPlatform('org.springframework.cloud:spring-cloud-dependencies:Finchley.SR1'),
                 'org.springframework:spring-context',
                 'com.h2database:h2:1.4.194'
