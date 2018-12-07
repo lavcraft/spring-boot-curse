@@ -36,7 +36,11 @@ public class NotificationService {
   public void notify(Answer answer) {
     setDateIfNotExist(answer);
     if (answer.getQuestionId() != null) {
-      answerCacheService.put(answer.getQuestionId(), answer);
+      try {
+        answerCacheService.put(answer.getQuestionId(), answer);
+      } catch (Exception e) {
+
+      }
     }
     emitters.forEach(sseEmitter -> sendAnswer(answer).to(sseEmitter));
   }
