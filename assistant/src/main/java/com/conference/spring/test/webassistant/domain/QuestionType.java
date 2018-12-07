@@ -10,7 +10,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum QuestionType {
-  YEGOR256(false), JBARUCH(true), OTHER(true);
+  JOKER(false), JBARUCH(true), OTHER(true);
 
   private final boolean cacheable;
 }

@@ -9,7 +9,7 @@ import org.springframework.test.context.ActiveProfiles;
  */
 
 @SpringBootTest
-@ActiveProfiles("yegor_vs_jbaruch")
+@ActiveProfiles("joker_vs_jbaruch")
 public abstract class ResolversAbstractCommonConfiguration {
 
 }

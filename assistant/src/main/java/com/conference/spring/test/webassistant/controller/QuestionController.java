@@ -33,7 +33,7 @@ public class QuestionController {
       log.info("{} answer: {}", answer.getOperatorId(), answer);
       notificationService.notify(answer);
     } else {
-      log.info("waiting yegor256 answer...");
+      log.info("waiting joker answer...");
     }
     return ResponseEntity.ok("{}");
   }

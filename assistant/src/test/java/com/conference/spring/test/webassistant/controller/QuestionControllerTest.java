@@ -4,7 +4,8 @@ import com.conference.spring.test.webassistant.client.JBaruchClient;
 import com.conference.spring.test.webassistant.domain.Answer;
 import com.conference.spring.test.webassistant.domain.Question;
 import com.conference.spring.test.webassistant.service.NotificationService;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
@@ -15,6 +16,7 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.PostConstruct;
@@ -30,7 +32,7 @@ import static org.springframework.http.HttpStatus.OK;
  * @author tolkv
  * @version 03/04/2017
  */
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @SpringBootTest(
     classes = QuestionControllerTest.MockJbaruchConfiguration.class,
     webEnvironment = RANDOM_PORT

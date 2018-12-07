@@ -3,20 +3,18 @@ server:
 logging.level.org.springframework.web: DEBUG
 
 conference:
-  yegor256.url: http://localhost:8001
+  joker.url: http://localhost:8001
   jbaruch.url: http://localhost:8002
 
 tokens:
-  jbaruch: npm leftpad artifactory артифактори groovy груви nexus нексус телефон binary repository manager бинарный репозиторий зависимостей барух jbaruch бинтрей bintray дистрибуция дистрибуции ***ки технологии технология
-  yegor256: ооп oop java джава жава жаба annotation annotations аннотации аннотация spring спринг декоратор decorator объекты объект object книги книга книги книгу книгах почитать читать голые данные классы класс stackoverflow google электронные женщины дамы девушки девушках дамах дизайн дизайны паттерн паттерны декоратор декораторы orm орм
+  jbaruch: npm leftpad artifactory артифактори groovy груви nexus нексус телефон binary repository manager бинарный репозиторий зависимостей барух jbaruch бинтрей bintray дистрибуция дистрибуции ***ки технологии технология колодцы рушь мочи tshaped t-shaped вуайеризм
+  joker: joker карандаш серьёзный серьезный джокер бэтман улыбка улыбку улыбаться smile confuse убивает убить ха-ха-ха ха хаха ха-ха фокус фокуса просто бэтмен убьем убьём бесплатно псих выбор правила правил способ разумный нож знать хочешь план плану никто паникует паника опустил готэма готэм рыцарь рыцаря использую шутки шутка убивать
 
 assistant.default:
   answers:
-    - когда Николай Алименков уйдет из Епама, он будет отвечать на подобные вопросы
-    - одному лишь богу ведом ответ
-    - даже егор не знает ответа на этот вопрос
     - ты шутишь? Даже дети знают ответ на этот вопрос!
     - ты бы еще про семантику volatile спросил!
+    - это не этичный вопрос
 
 logging.level:
   org.springframework.test.context.cache: debug

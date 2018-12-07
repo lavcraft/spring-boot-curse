@@ -1,6 +1,6 @@
 package com.conference.spring.test.webassistant;
 
-import com.conference.spring.test.webassistant.service.resolvers.words.Yegor256WordsFrequencyResolver;
+import com.conference.spring.test.webassistant.service.resolvers.words.JokerWordsFrequencyResolver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DeveloperAssistantApplicationTests {
   @Autowired
-  Yegor256WordsFrequencyResolver yegor256WordsFrequencyResolver;
+  JokerWordsFrequencyResolver jokerWordsFrequencyResolver;
 
   @Autowired
   ApplicationContext applicationContext;

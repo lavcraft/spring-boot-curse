@@ -4,5 +4,5 @@ include(
         "common",
         "assistant",
         "jbaruch-service",
-        "yegor256-service"
+        "joker-service"
 )
