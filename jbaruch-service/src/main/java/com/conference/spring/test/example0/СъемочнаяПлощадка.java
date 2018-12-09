@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+//Avoid multiple SpringBootApplication in one project
+//@SpringBootApplication
 public class СъемочнаяПлощадка {
 
     @Bean
